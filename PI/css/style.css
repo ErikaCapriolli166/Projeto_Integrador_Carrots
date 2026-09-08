@@ -1,0 +1,15 @@
+@import url('../css/variables.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 12px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
