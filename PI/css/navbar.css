@@ -4,6 +4,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    border-bottom: 4px solid var(--color-1);
 
     .navbar {
         display: flex;
