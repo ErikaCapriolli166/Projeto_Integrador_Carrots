@@ -69,16 +69,9 @@ header {
     }
 }
 
-.faixa {
-        background-color: var(--color-1);
-        height: 4px;
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-}
-
 @media (min-width: 768px) {
     header {
+        border-bottom: 4px solid var(--color-1);
         .navbar {
             .btn-mobile {
                 display: none;
