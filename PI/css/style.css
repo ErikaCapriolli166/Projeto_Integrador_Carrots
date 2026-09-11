@@ -29,7 +29,7 @@
   initial-value: #000;
 }
 
-#imagem-menu {
+.imagem-menu{
     display: flex;
     justify-content: center;
 
@@ -44,8 +44,26 @@
             height: 100%;
         }
     }
+}
 
-  --s: 80px;
+.teste{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .teste2 {
+    position: relative;
+    bottom: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  background-color: var(--color-2);
+  /*--s: 80px;
   --_g: #0000, var(--c1) 2deg calc(var(--a) - 2deg),#0000 var(--a);
   background: 
     conic-gradient(from calc(-45deg  - var(--a)/2) at top    var(--p) left  var(--p),var(--_g)),
@@ -58,7 +76,7 @@
     conic-gradient(from calc( 135deg - var(--a)/2) at bottom var(--p) right var(--p),var(--_g))
     var(--c2);
   background-size: calc(2*var(--s)) calc(2*var(--s));
-  animation: m 2s infinite alternate linear;
+  animation: m 2s infinite alternate linear; */
 }
 
 @keyframes m {
@@ -90,7 +108,7 @@
     --c1: #FAD089;
     background-position: var(--s) 0,0 var(--s);
   }
-}
+} 
 
 .btn {
     padding: 10px 20px;
@@ -117,15 +135,18 @@
     }
 }
 
+
 #Menu {
-    background-color: var(--color-10);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-    min-height: calc(50vh - 96px);
-    padding: 32px 4%;
-    padding-top: calc(0px, 5vw, 32px);
+  background-color: var(--color-10);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 90%;
+  min-height: calc(65vh - 96px);
+  padding: 32px 4%;
+  padding-top: calc(0px, 5vw, 32px);
+  border-radius: 8px;
 
 
     h1 {
@@ -134,7 +155,7 @@
         font-size: clamp(3rem, 5vw, 4,3rem);
         text-transform: uppercase;
         line-height: 1.2;
-        max-width: 500px;
+        max-width: 100%;
 
         span {
             color: var(--color-6);
@@ -144,8 +165,28 @@
     p {
       color: var(--color-1);
       text-align: center;
-      font-size: 1rem;
+      font-size: 1.25rem;
       font-weight: 500;
-      max-width: 450px;
+      max-width: 1000px;
     }
+}
+
+#svg {
+  width: 100%;
+}
+
+.svg-geral {
+  position: relative;
+  bottom: -4px;
+  width: 100%;
+  height: 100px;
+
+  path {
+    fill: var(--color-6);
+  }
+  
+}
+
+#Sobre {
+  background-color: var(--color-6);
 }

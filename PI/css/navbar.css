@@ -74,6 +74,7 @@ header {
         height: 4px;
         width: 100%;
         position: fixed;
+        z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -86,8 +87,9 @@ header {
             ul {
                 display: flex;
                 position: static;
+                align-items: center;
                 flex-direction: row;
-                gap: 1rem;
+                gap: clamp(1vw, 4vw, 7vw);
                 width: auto;
                 padding: 0;
 
