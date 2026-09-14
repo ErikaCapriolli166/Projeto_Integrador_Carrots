@@ -1,0 +1,53 @@
+.slides {
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+
+    animation: scroll 20s linear infinite;
+}
+
+.slide {
+    width: 270px;
+    flex-shrink: 0;
+    text-align: center;
+    padding-bottom: 10px;
+
+    img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    h3 {
+        padding-bottom: 10px;
+    }
+
+    p {
+        padding-top: 10px;
+    }
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 10px));
+    }
+}
