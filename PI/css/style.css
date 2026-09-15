@@ -189,55 +189,148 @@
 }
 
 #Sobre {
-  background-color: var(--color-6);
-  padding: 0px 4% ;
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  min-height: calc(65vh - 96px);
+    width: 100%;
+    padding: 80px 10%;
+}
 
-  h2{
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: var(--color-9);
-    font-weight: 700;
-    position: relative;
 
-    &::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 4px;
-      background-color: var(--color-4);
-      position: absolute;
-      bottom: 0;
-      border-radius: 30px;
-    }
-  }
+/* ================================= */
+/* CONTAINER SOBRE */
+/* ================================= */
 
-  h3{
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: var(--color-9);
-    font-weight: 700;
-    position: relative;
+#Sobre {
+    width: 100%;
+    padding: 80px 10%;
+    background-color: var(--color-6);
+}
 
-  }
+.sobre-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-  p{
-    font-size: 1.25rem;
-    color: var(--color-9);
-    font-weight: 500;
-    position: relative;
+    gap: 60px;
 
-  }
+    padding: 60px;
 
-  .titles {
+    background-color: var(--color-10);
+
+    border: 2px solid var(--color-8);
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px #3a1a007c;
+
+    align-items:baseline;
+}
+
+
+
+/* ================================= */
+/* LADO ESQUERDO */
+/* ================================= */
+
+.sobre-texto {
+    text-align: left;
+}
+
+.sobre-texto h2 {
+    color: var(--color-6);
+
+    font-size: 2.7rem;
+
+    margin-bottom: 25px;
+}
+
+.sobre-texto p {
+
+  text-align: justify;
+
+    color: var(--color-3);
+
+    font-size: 1.05rem;
+
+    font-weight: 600;
+
+    line-height: 1.8;
+}
+
+
+
+/* ================================= */
+/* LADO DIREITO */
+/* ================================= */
+
+.sobre-info {
     display: flex;
+
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+
+    gap: 20px;
+}
+
+.titles {
+    padding: 25px;
+
+    background-color: var(--color-11);
+
+    border-left: 6px solid var(--color-6);
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 12px var(--color-5);
+
+    transition: 0.3s ease;
+}
+
+.titles:hover {
+    transform: translateX(8px);
+
+    border-left-color: var(--color-5);
+}
+
+.titles h3 {
+    color: var(--color-6);
+
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+}
+
+.titles p {
+
+  text-align: justify;
+
+    color: var(--color-3);
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+
+
+
+@media (max-width: 950px) {
+
+    #Sobre {
+        padding: 50px 6%;
+    }
+
+    .sobre-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 35px 25px;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .sobre-texto h2 {
+        font-size: 2.2rem;
+    }
 
 }
