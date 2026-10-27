@@ -1,6 +1,7 @@
-@import url('../css/variables.css');
-@import url('../css/navbar.css');
-@import url('../css/carrossel.css');
+@import url('variables.css');
+@import url('navbar.css');
+@import url('carrossel.css');
+@import url('formularios.css');
 
 * {
     margin: 0;
@@ -9,28 +10,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@property --a{
-  syntax: '<angle>';
-  inherits: true;
-  initial-value: 0deg;
-}
-@property --p {
-  syntax: '<percentage>';
-  inherits: true;
-  initial-value: 0%;
-}
-@property --c1 {
-  syntax: '<color>';
-  inherits: true;
-  initial-value: #000;
-}
-@property --c2 {
-  syntax: '<color>';
-  inherits: true;
-  initial-value: #000;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
 }
 
-.imagem-menu{
+@property --a {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+}
+
+@property --p {
+    syntax: '<percentage>';
+    inherits: true;
+    initial-value: 0%;
+}
+
+@property --c1 {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: #000;
+}
+
+@property --c2 {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: #000;
+}
+
+.imagem-menu {
     display: flex;
     justify-content: center;
 
@@ -47,69 +56,72 @@
     }
 }
 
-.teste{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-
-  .teste2 {
-    position: relative;
-    bottom: -100px;
+.teste {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-  }
 
-  background-image: url("https://www.transparenttextures.com/patterns/food.png");
-  background-color: var(--color-2);
-  /*--s: 80px;
-  --_g: #0000, var(--c1) 2deg calc(var(--a) - 2deg),#0000 var(--a);
-  background: 
-    conic-gradient(from calc(-45deg  - var(--a)/2) at top    var(--p) left  var(--p),var(--_g)),
-    conic-gradient(from calc(-45deg  - var(--a)/2) at top    var(--p) left  var(--p),var(--_g)),
-    conic-gradient(from calc( 45deg  - var(--a)/2) at top    var(--p) right var(--p),var(--_g)),
-    conic-gradient(from calc( 45deg  - var(--a)/2) at top    var(--p) right var(--p),var(--_g)),
-    conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left  var(--p),var(--_g)),
-    conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left  var(--p),var(--_g)),
-    conic-gradient(from calc( 135deg - var(--a)/2) at bottom var(--p) right var(--p),var(--_g)),
-    conic-gradient(from calc( 135deg - var(--a)/2) at bottom var(--p) right var(--p),var(--_g))
-    var(--c2);
-  background-size: calc(2*var(--s)) calc(2*var(--s));
-  animation: m 2s infinite alternate linear; */
+    .teste2 {
+        position: relative;
+        bottom: -100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+    background-color: var(--color-2);
+    /*--s: 80px;
+    --_g: #0000, var(--c1) 2deg calc(var(--a) - 2deg),#0000 var(--a);
+    background:
+        conic-gradient(from calc(-45deg  - var(--a)/2) at top    var(--p) left  var(--p),var(--_g)),
+        conic-gradient(from calc(-45deg  - var(--a)/2) at top    var(--p) left  var(--p),var(--_g)),
+        conic-gradient(from calc( 45deg  - var(--a)/2) at top    var(--p) right var(--p),var(--_g)),
+        conic-gradient(from calc( 45deg  - var(--a)/2) at top    var(--p) right var(--p),var(--_g)),
+        conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left  var(--p),var(--_g)),
+        conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left  var(--p),var(--_g)),
+        conic-gradient(from calc( 135deg - var(--a)/2) at bottom var(--p) right var(--p),var(--_g)),
+        conic-gradient(from calc( 135deg - var(--a)/2) at bottom var(--p) right var(--p),var(--_g))
+        var(--c2);
+    background-size: calc(2*var(--s)) calc(2*var(--s));
+    animation: m 2s infinite alternate linear; */
 }
 
 @keyframes m {
-  0%,15% {
-    --a: 135deg;
-    --p: 20%;
-    --c1: #3B8183;
-    --c2: #FAD089;
-    background-position: 0 0,var(--s) var(--s);
-  }
-  45%,50% {
-    --a: 90deg;
-    --p: 25%;
-    --c1: #3B8183;
-    --c2: #FAD089;
-    background-position: 0 0,var(--s) var(--s);
-  }
-  50.01%,55% {
-    --a: 90deg;
-    --p: 25%;
-    --c2: #3B8183;
-    --c1: #FAD089;
-    background-position: var(--s) 0,0 var(--s);
-  }
-  85%,100% {
-    --a: 135deg;
-    --p: 20%;
-    --c2: #3B8183;
-    --c1: #FAD089;
-    background-position: var(--s) 0,0 var(--s);
-  }
-} 
+    0%, 15% {
+        --a: 135deg;
+        --p: 20%;
+        --c1: #3B8183;
+        --c2: #FAD089;
+        background-position: 0 0, var(--s) var(--s);
+    }
+
+    45%, 50% {
+        --a: 90deg;
+        --p: 25%;
+        --c1: #3B8183;
+        --c2: #FAD089;
+        background-position: 0 0, var(--s) var(--s);
+    }
+
+    50.01%, 55% {
+        --a: 90deg;
+        --p: 25%;
+        --c2: #3B8183;
+        --c1: #FAD089;
+        background-position: var(--s) 0, 0 var(--s);
+    }
+
+    85%, 100% {
+        --a: 135deg;
+        --p: 20%;
+        --c2: #3B8183;
+        --c1: #FAD089;
+        background-position: var(--s) 0, 0 var(--s);
+    }
+}
 
 .btn {
     padding: 10px 20px;
@@ -136,19 +148,17 @@
     }
 }
 
-
 #Menu {
-  background-color: var(--color-10);
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-  width: 90%;
-  min-height: calc(65vh - 96px);
-  padding: 32px 4%;
-  padding-top: calc(0px, 5vw, 32px);
-  border-radius: 8px;
-
+    background-color: var(--color-10);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    width: 90%;
+    min-height: calc(65vh - 96px);
+    padding: 32px 4%;
+    padding-top: calc(0px, 5vw, 32px);
+    border-radius: 8px;
 
     h1 {
         color: var(--color-1);
@@ -164,35 +174,33 @@
     }
 
     p {
-      color: var(--color-1);
-      text-align: center;
-      font-size: 1.25rem;
-      font-weight: 500;
-      max-width: 1000px;
+        color: var(--color-1);
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 500;
+        max-width: 1000px;
     }
 }
 
 #svg {
-  width: 100%;
+    width: 100%;
 }
 
 .svg-geral {
-  position: relative;
-  bottom: -4px;
-  width: 100%;
-  height: 100px;
+    position: relative;
+    bottom: -4px;
+    width: 100%;
+    height: 100px;
 
-  path {
-    fill: var(--color-6);
-  }
-  
+    path {
+        fill: var(--color-6);
+    }
 }
 
 #Sobre {
     width: 100%;
     padding: 80px 10%;
 }
-
 
 /* ================================= */
 /* CONTAINER SOBRE */
@@ -207,23 +215,14 @@
 .sobre-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     gap: 60px;
-
     padding: 60px;
-
     background-color: var(--color-10);
-
     border: 2px solid var(--color-8);
-
     border-radius: 25px;
-
     box-shadow: 0 10px 25px #3a1a007c;
-
-    align-items:baseline;
+    align-items: baseline;
 }
-
-
 
 /* ================================= */
 /* LADO ESQUERDO */
@@ -235,26 +234,17 @@
 
 .sobre-texto h2 {
     color: var(--color-6);
-
     font-size: 2.7rem;
-
     margin-bottom: 25px;
 }
 
 .sobre-texto p {
-
-  text-align: justify;
-
+    text-align: justify;
     color: var(--color-3);
-
     font-size: 1.05rem;
-
     font-weight: 600;
-
     line-height: 1.8;
 }
-
-
 
 /* ================================= */
 /* LADO DIREITO */
@@ -262,66 +252,45 @@
 
 .sobre-info {
     display: flex;
-
     flex-direction: column;
-
     gap: 20px;
 }
 
 .titles {
     padding: 25px;
-
     background-color: var(--color-11);
-
     border-left: 6px solid var(--color-6);
-
     border-radius: 12px;
-
     box-shadow: 0 5px 12px var(--color-5);
-
     transition: 0.3s ease;
 }
 
 .titles:hover {
     transform: translateX(8px);
-
     border-left-color: var(--color-5);
 }
 
 .titles h3 {
     color: var(--color-6);
-
     font-size: 1.5rem;
-
     margin-bottom: 10px;
 }
 
 .titles p {
-
-  text-align: justify;
-
+    text-align: justify;
     color: var(--color-3);
-
     line-height: 1.6;
-
     margin: 0;
 }
 
-
-
-
-
 @media (max-width: 950px) {
-
     #Sobre {
         padding: 50px 6%;
     }
 
     .sobre-container {
         grid-template-columns: 1fr;
-
         gap: 40px;
-
         padding: 35px 25px;
     }
 
@@ -332,5 +301,94 @@
     .sobre-texto h2 {
         font-size: 2.2rem;
     }
+}
 
+/* ================================= */
+/* RODAPÉ */
+/* ================================= */
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 10%;
+    background-color: var(--color-1);
+    color: var(--color-10);
+}
+
+.rodape p {
+    color: var(--color-10);
+}
+
+.rodape a {
+    color: var(--color-10);
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+}
+
+.rodape a:hover {
+    color: var(--color-5);
+}
+
+@media (max-width: 768px) {
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 6%;
+    }
+}
+
+/* ================================= */
+/* PÁGINA DE COMPRA */
+/* ================================= */
+
+.btn-voltar {
+    background-color: var(--color-6);
+    color: var(--color-10);
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--color-5);
+    }
+}
+
+.pagina-compra {
+    min-height: 70vh;
+    padding: 65px 24px;
+    background-color: var(--color-10);
+    text-align: center;
+}
+
+.compra-conteudo {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.pagina-compra .etiqueta {
+    color: var(--color-6);
+}
+
+.pagina-compra h1 {
+    color: var(--color-6);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    margin: 12px 0;
+}
+
+.imagem-compra {
+    display: block;
+    width: min(100%, 360px);
+    max-height: 380px;
+    object-fit: contain;
+    margin: 25px auto;
+}
+
+.texto-compra {
+    color: var(--color-3);
+    font-weight: 600;
+    margin: 16px 0 24px;
+}
+
+.pagina-compra .btn-default {
+    display: inline-block;
 }

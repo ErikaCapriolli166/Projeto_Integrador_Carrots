@@ -1,0 +1,265 @@
+/* ================================= */
+/* AVALIAÇÕES E CONTATO */
+/* ================================= */
+
+.secao {
+    width: 100%;
+    padding: 80px 10%;
+}
+
+#Avaliacoes {
+    background-color: var(--color-2);
+}
+
+#Contatos {
+    background-color: var(--color-10);
+}
+
+/* Avaliações: fundo escuro, textos claros */
+#Avaliacoes .titulo-secao h2 {
+    color: var(--color-10);
+}
+
+#Avaliacoes .etiqueta {
+    color: var(--color-5);
+}
+
+#Avaliacoes .titulo-secao p:not(.etiqueta),
+#Avaliacoes .sem-avaliacoes {
+    color: var(--color-9);
+}
+
+.titulo-secao {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 32px;
+}
+
+.titulo-secao h2 {
+    color: var(--color-6);
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    line-height: 1.2;
+    margin: 8px 0 14px;
+}
+
+.titulo-secao p:not(.etiqueta) {
+    color: var(--color-3);
+    font-weight: 600;
+}
+
+.etiqueta {
+    color: var(--color-6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+/* ================================= */
+/* FORMULÁRIOS */
+/* ================================= */
+
+.formulario {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 28px;
+    background-color: var(--color-11);
+    border: 2px solid var(--color-8);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(58, 26, 0, 0.25);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 17px;
+}
+
+.campo label {
+    color: var(--color-1);
+    font-weight: 700;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    border: 1px solid var(--color-7);
+    border-radius: 7px;
+    padding: 11px 12px;
+    font: inherit;
+    background-color: #ffffff;
+    color: var(--color-3);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid var(--color-5);
+    border-color: var(--color-5);
+}
+
+.mensagem-formulario {
+    margin-top: 12px;
+    font-weight: 700;
+    color: var(--color-1);
+}
+
+/* ================================= */
+/* LISTA DE AVALIAÇÕES */
+/* ================================= */
+
+.lista-avaliacoes {
+    max-width: 800px;
+    margin: 28px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.card-avaliacao {
+    padding: 18px;
+    border: 1px solid var(--color-8);
+    background-color: var(--color-11);
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(58, 26, 0, 0.15);
+    overflow-wrap: anywhere;
+}
+
+.card-avaliacao h3 {
+    color: var(--color-6);
+}
+
+.card-avaliacao p {
+    color: var(--color-3);
+}
+
+.card-avaliacao .estrelas {
+    color: var(--color-5);
+    letter-spacing: 2px;
+}
+
+.sem-avaliacoes {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--color-3);
+    font-weight: 600;
+}
+
+/* ================================= */
+/* LINKS DE CONTATO */
+/* ================================= */
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.link-contato {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid var(--color-1);
+    border-radius: 7px;
+    text-decoration: none;
+    color: var(--color-1);
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-contato:hover {
+    background-color: var(--color-1);
+    color: var(--color-10);
+}
+
+.link-icone {
+    display: block;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* O ícone do WhatsApp é um JPEG com fundo quadriculado; o recorte circular esconde o fundo */
+.link-icone-redondo {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.link-icone-redondo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+}
+
+/* ================================= */
+/* MAPA DE LOCALIZAÇÃO */
+/* ================================= */
+
+#Localizacao {
+    background-color: var(--color-6);
+}
+
+#Localizacao .etiqueta {
+    color: var(--color-9);
+}
+
+#Localizacao .titulo-secao h2 {
+    color: var(--color-10);
+}
+
+#Localizacao .titulo-secao p:not(.etiqueta) {
+    color: var(--color-11);
+}
+
+.localizacao {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.localizacao iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(58, 26, 0, 0.4);
+}
+
+.localizacao .btn-default {
+    display: inline-block;
+    background-color: var(--color-10);
+    color: var(--color-1);
+}
+
+.localizacao .btn-default:hover {
+    background-color: var(--color-9);
+}
+
+@media (max-width: 768px) {
+    .secao {
+        padding: 50px 6%;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .lista-avaliacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .localizacao iframe {
+        height: 320px;
+    }
+}
