@@ -148,6 +148,21 @@ html {
     }
 }
 
+#whatts-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    cursor: pointer;
+
+    #whatsapp-icon  {
+        border-radius: 120px;
+        height: 100px;
+        width: 100px;
+        transform: scale(1.15);
+    }
+}
+
 #Menu {
     background-color: var(--color-10);
     display: flex;

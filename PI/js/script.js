@@ -163,3 +163,10 @@ if (formularioAvaliacao) {
         carregarAvaliacoes();
     });
 }
+
+function openWhatsApp() {
+    const telefoneWhatsApp = "5511999999999";
+    const texto = "Olá! Gostaria de saber mais sobre o produto.";
+    const linkWhatsApp = "https://wa.me/" + telefoneWhatsApp + "?text=" + encodeURIComponent(texto);
+    window.open(linkWhatsApp, "_blank");
+}
